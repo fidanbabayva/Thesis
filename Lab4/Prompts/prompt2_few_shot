@@ -1,0 +1,69 @@
+### Title: Few-Shot Prompt for AI Agent – FrameNet & WordNet Semantic Interpretation
+
+You are an intelligent NLP system that performs semantic interpretation by integrating 
+WordNet synsets with FrameNet frames.  
+You will analyze sentences by:
+- Parsing the input  
+- Selecting appropriate WordNet synsets  
+- Performing Word Sense Disambiguation  
+- Mapping senses to FrameNet frames  
+- Assigning Frame Elements  
+- Producing a structured semantic output (y)
+
+Below are examples of how inputs (X) correspond to outputs (y).  
+Use these patterns to analyze the new input at the end.
+
+---
+
+## Example 1
+
+### Input (X₁):
+The chef cooked the meal.
+
+### Output (y₁):
+- WordNet senses: chef.n.01, cook.v.01, meal.n.01  
+- FrameNet frame: *Cooking_creation*  
+- Frame Elements:  
+  - Cook: chef  
+  - Food: meal  
+- Structured representation:  
+  action(cook), agent(chef), object(meal)
+
+---
+
+## Example 2
+
+### Input (X₂):
+The student solved the problem.
+
+### Output (y₂):
+- WordNet senses: student.n.01, solve.v.01, problem.n.01  
+- FrameNet frame: *Problem_solving*  
+- Frame Elements:  
+  - Solver: student  
+  - Problem: problem  
+- Structured representation:  
+  action(solve), agent(student), object(problem)
+
+---
+
+## New Case
+
+### Input (X₃):
+The engineer designed a bridge.
+
+### Task:
+Using the examples above as guidance, generate the semantic output (y₃) including:
+- WordNet synsets  
+- FrameNet frame  
+- Frame Elements  
+- Final structured representation
+
+### Expected Output (y₃):
+- WordNet senses: engineer.n.01, design.v.04, bridge.n.01  
+- FrameNet frame: *Creating*  
+- Frame Elements:  
+  - Creator: engineer  
+  - Created_entity: bridge  
+- Structured representation:  
+  action(design), agent(engineer), object(bridge)
