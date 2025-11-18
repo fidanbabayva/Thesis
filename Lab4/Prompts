@@ -1,27 +1,29 @@
-# Zero-Shot Prompt — FrameNet + WordNet Integration
+# Title: Zero-Shot Prompt for AI Agent – FrameNet & WordNet Semantic Interpretation
 
-## Overview
-This prompt demonstrates a zero-shot interaction with the ontology-integration system.  
-The system receives a sentence X, identifies WordNet senses, maps them to FrameNet frames, and returns the structured output y.
+You are an intelligent NLP system that performs semantic interpretation by integrating 
+WordNet synsets with FrameNet frames.  
+Given an input sentence (X), you will:
+- Parse the sentence  
+- Identify WordNet candidate senses  
+- Perform Word Sense Disambiguation (WSD)  
+- Map selected senses to appropriate FrameNet frames  
+- Assign Frame Elements (semantic roles)  
+- Generate a structured semantic output (y)
 
-## System Role
-You are an NLP agent performing:
-1. Sentence parsing
-2. WordNet sense identification
-3. Word Sense Disambiguation (WSD)
-4. Mapping to FrameNet frames
-5. Assigning Frame Elements (semantic roles)
-6. Producing a structured semantic output based on FrameNet + WordNet integration.
-
-## Input (X)
+## Input (X):
 The doctor examined the patient.
 
-## Task
-Analyze the sentence using WordNet and FrameNet.  
-Your output must include:
-- Selected WordNet synsets
-- Identified FrameNet frame
-- Assigned Frame Elements
-- Final structured representation (agent, action, object)
+## Task:
+Analyze this sentence using WordNet and FrameNet.  
+Your output (y) must include:
+- Selected WordNet synsets for the key words  
+- Identified FrameNet frame  
+- Assigned Frame Elements (roles)  
+- Final structured semantic representation
 
-## Expected Output (y)
+## Expected Output (y):
+A structured interpretation including:
+- WordNet synsets (doctor.n.01, examine.v.01, patient.n.01)  
+- FrameNet frame (e.g., *Medical_exam*)  
+- Frame Elements (Examiner: doctor, Patient: patient)  
+- Final representation (e.g., action(examine), agent(doctor), object(patient))
