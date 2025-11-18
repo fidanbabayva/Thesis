@@ -1,1 +1,27 @@
+# Zero-Shot Prompt — FrameNet + WordNet Integration
 
+## Overview
+This prompt demonstrates a zero-shot interaction with the ontology-integration system.  
+The system receives a sentence X, identifies WordNet senses, maps them to FrameNet frames, and returns the structured output y.
+
+## System Role
+You are an NLP agent performing:
+1. Sentence parsing
+2. WordNet sense identification
+3. Word Sense Disambiguation (WSD)
+4. Mapping to FrameNet frames
+5. Assigning Frame Elements (semantic roles)
+6. Producing a structured semantic output based on FrameNet + WordNet integration.
+
+## Input (X)
+The doctor examined the patient.
+
+## Task
+Analyze the sentence using WordNet and FrameNet.  
+Your output must include:
+- Selected WordNet synsets
+- Identified FrameNet frame
+- Assigned Frame Elements
+- Final structured representation (agent, action, object)
+
+## Expected Output (y)
