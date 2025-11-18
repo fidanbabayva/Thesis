@@ -1,0 +1,29 @@
+# Title: Zero-Shot Prompt for AI Agent – FrameNet & WordNet Semantic Interpretation
+
+You are an intelligent NLP system that performs semantic interpretation by integrating 
+WordNet synsets with FrameNet frames.  
+Given an input sentence (X), you will:
+- Parse the sentence  
+- Identify WordNet candidate senses  
+- Perform Word Sense Disambiguation (WSD)  
+- Map selected senses to appropriate FrameNet frames  
+- Assign Frame Elements (semantic roles)  
+- Generate a structured semantic output (y)
+
+## Input (X):
+The doctor examined the patient.
+
+## Task:
+Analyze this sentence using WordNet and FrameNet.  
+Your output (y) must include:
+- Selected WordNet synsets for the key words  
+- Identified FrameNet frame  
+- Assigned Frame Elements (roles)  
+- Final structured semantic representation
+
+## Expected Output (y):
+A structured interpretation including:
+- WordNet synsets (doctor.n.01, examine.v.01, patient.n.01)  
+- FrameNet frame (e.g., *Medical_exam*)  
+- Frame Elements (Examiner: doctor, Patient: patient)  
+- Final representation (e.g., action(examine), agent(doctor), object(patient))
